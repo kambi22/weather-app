@@ -8,7 +8,7 @@ import { LuCloud, LuCloudLightning, LuCloudRain, LuCloudSun, LuShowerHead, LuSno
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Home = () => {
   const [weatherData, setWeatherData] = useState([]); // Renamed for clarity: holds fetched weather objects
@@ -144,7 +144,17 @@ const Home = () => {
                 ))
               ) : (
                 // Display message when no data and not loading/error
-                !loading && !error && <p>No weather data available. Please add a city.</p>
+                !loading && !error 
+                && 
+                <div className='mx-auto'>
+                 <DotLottieReact
+                  src="https://lottie.host/bdc139dc-b351-4d18-844e-d9b6a1a3cab5/tOvRixBZfb.lottie"
+                  loop
+                  autoplay
+                  className='h-100 w-100'
+                />
+                <p className='text-2xl font-bold text-gray-600 text-center mx-auto'>Please search Location to check weather.</p>
+                </div>
               )}
             </Grid>
           </Box>
