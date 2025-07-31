@@ -25,8 +25,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .background-image{
-  background-image: url('https://img.freepik.com/free-photo/fantastic-cloudscape_1232-490.jpg?t=st=1753528189~exp=1753531789~hmac=59d3ad7cc69491084b4ceefd017930d6174499981be931b67a055a58dbb6ed8a&w=1380');
+  background-image: url('../../public/cloud.jpg');
   background-size: cover;
+  /* background-color: #171717; */
 
 
 

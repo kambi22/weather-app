@@ -7,7 +7,6 @@ import { WiHumidity } from "react-icons/wi";
 import { LuCloud, LuCloudLightning, LuCloudRain, LuCloudSun, LuShowerHead, LuSnowflake, LuSun } from "react-icons/lu"; // Added more specific icons
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Home = () => {
@@ -73,6 +72,7 @@ const Home = () => {
 
   return (
     <div className="">
+   
       {error &&
         <Alert className=' text-center ms-5' severity="error" sx={{ position: 'absolute', top: '50px', right: '20px' }}>
           <AlertTitle>{error}</AlertTitle>
